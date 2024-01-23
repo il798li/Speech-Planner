@@ -1,4 +1,4 @@
-public static class Time {
+public final class Time {
     public static int time = 0;
 
     public static int pass (int skip) {
