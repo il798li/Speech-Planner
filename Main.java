@@ -1,5 +1,9 @@
+import Time;
+
 class Main {
-    public static void main(String[] args) {
+    public static void main (String [] args) {
+
+        print(Time.time);
 
         Event impromptu = new Event (0, 6);
         Event spar = new Event (0, 10, 2);
@@ -10,5 +14,10 @@ class Main {
 
         Speaker aditya = new Speaker ("Aditya", new Event [] {impromptu, extemp});
         Speaker nate   = new Speaker ("Nate",   new Event [] {impromptu, extemp});
+
     }
-  }
+
+    public static void print (String text) {
+        System.out.println (text);
+    }
+}
